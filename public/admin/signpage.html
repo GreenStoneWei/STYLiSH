@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title> Sign Page</title>
+    <link rel="stylesheet" href="/../css/signform.css">
+    <script src="/../js/fb_login.js"></script>
+  </head>
+
+  <body>
+
+    <div id="signContainer">
+
+      <div class="signBlock">
+        <h2>使用者註冊</h2>
+        <form id="signUpForm">
+          <div>
+            <label>使用者名稱 (name)<br>
+              <input id="name" type="text" name="name" required="required" >
+            </label>
+          </div>
+          <div>
+            <label>電子郵件信箱 (e-mail address)<br>
+              <input id="email" type="text" name="email" required="required" >
+            </label>
+          </div>
+          <div>
+            <label>密碼 (password)<br>
+              <input id="password" type="text" name="password" required="required" >
+            </label>
+          </div>
+          <div>
+            <label>照片 (picture)<br>
+              <input id="mainImage" type="file" name="picture">
+            </label>
+          </div>
+          <div>
+            <button class="signButton" type="submit" value="註冊">註冊</button>
+          </div>
+        </form>
+
+      </div>
+
+      <div class="signBlock">
+        <h2>使用者登入</h2>
+        <form id="signInForm">
+          <div>
+            <label>使用者名稱 (name)<br>
+              <input id="loginName" type="text" name="loginName" required="required">
+            </label>
+          </div>
+          <div>
+            <label>電子郵件信箱 (e-mail address)<br>
+              <input id="loginEmail" type="text" name="loginEmail" required="required">
+            </label>
+          </div>
+          <div>
+            <label>密碼 (password)<br>
+              <input id="loginPassword" type="text" name="loginPassword" required="required">
+            </label>
+          </div>
+          <div>
+            <button class="signButton" type="submit" value="登入">登入</button>
+          </div>
+        </form>
+        <!-- <div class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="login_with" data-show-faces="false" data-auto-logout-link="true" data-use-continue-as="true" scope="public_profile,email" onlogin="checkLoginState();"></div> -->
+        <div id="status"></div>
+
+      </div>
+
+    </div> <!-- End of sign container -->
+    <div id="signUserInfo">
+      <div id="registerResponse"></div>
+      <div id="loginResponse"></div>
+    </div>
+
+  </body>
+  <footer>
+    <script src="/../js/signup.js"></script>
+    <script src="/../js/signin.js"></script>
+  </footer>
+
+</html>

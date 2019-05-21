@@ -1,0 +1,29 @@
+doctype html
+html
+  head
+    title  Campaign Page
+    link(rel='stylesheet', href='../css/upload.css')
+  body
+    h1#pageTitle 新增廣告商品
+    #campaignBlock
+      form#uploadForm(action='/addCampaign', method='POST', enctype='multipart/form-data')
+        div
+          label
+            | 商品編號 (product_id)
+            br
+            input#title(type='text', name='campaignProductId')
+        div
+          label
+            | 一張主商品圖 (picture)
+            br
+            input#mainImage(type='file', name='picture') 
+        div
+          label
+            | 廣告標語 (story)
+            br
+            textarea#story(type='text', name='story')
+        
+        div
+          input.uploadButton(type='submit', value='上傳')
+  footer
+    block msg

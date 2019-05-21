@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  font-family: Helvetica, Arial;
+  line-height: 1.5;
+  text-align: left;
+  color: #0C2233;
+}
+
+#pageTitle {
+  text-align: center;
+}
+
+input {
+  width: 200px;
+  font-size: 1em;
+  margin: 5px;
+  outline: none;
+}
+
+select {
+  width: 200px;
+}
+
+.uploadButton {
+  margin-top: 20px;
+  background-color: Bisque;
+}
+
+#profileBlock,
+#inventoryBlock,
+#galleryBlock,
+#campaignBlock {
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: aliceblue;
+}
+
+#uploadForm div {
+  margin-top: 20px;
+}
+
+#story{
+  width: 600px;
+  height: 200px;
+}

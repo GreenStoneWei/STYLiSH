@@ -1,0 +1,67 @@
+doctype html
+html
+  head
+    title  Prouct Management Page
+    link(rel='stylesheet', href='../css/upload.css')
+  body
+    h1#pageTitle 商品管理頁面
+    #profileBlock
+      h2 新增商品基本資訊
+      form#uploadForm(action='/profile', method='POST', enctype='multipart/form-data')
+        div
+          label
+            | 商品名稱 (title)
+            br
+            input#title(type='text', name='title')
+        div
+          label
+            | 類別 (category)
+            br
+            select#category(name='category')
+              option(value='men') 男裝
+              option(value='women') 女裝
+              option(value='accessories') 配件
+        div
+          label
+            | 商品描述 (description)
+            br
+            input#description(type='text', name='description')
+        div
+          label
+            | 價格 (price)
+            br
+            input#price(type='text', name='price')
+        div
+          label
+            | 質地 (texture)
+            br
+            input#texture(type='text', name='texture')
+        div
+          label
+            | 洗滌方式 (wash)
+            br
+            input#wash(type='text', name='wash')
+        div
+          label
+            | 產地 (place)
+            br
+            input#place(type='text', name='place')
+        div
+          label
+            | 備註 (note)
+            br
+            input#note(type='text', name='note')
+        div
+          label
+            | 勸敗語句 (story)
+            br
+            input#story(type='text', name='story')
+        div
+          label
+            | 一張主商品圖 (main_image)
+            br
+            input#mainImage(type='file', name='main_image')
+        div
+          input.uploadButton(type='submit', value='上傳')
+  footer
+    block res_msg

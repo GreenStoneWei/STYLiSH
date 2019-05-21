@@ -1,0 +1,47 @@
+doctype html
+html
+  head
+    title  Prouct Management Page
+    link(rel='stylesheet', href='../css/upload.css')
+  body
+    h1#pageTitle 商品管理頁面
+    #inventoryBlock
+      h2 商品存貨（顏色、尺寸）管理
+      div(style='color: grey;')
+        p 說明：若同一商品有多種顏色與尺寸，請分別輸入。
+        p 範例：A 商品有紅色 L 的 5 件、M 的 3 件；需要分兩次輸入
+        p 1. 紅色 / L / 5
+        p 2. 紅色 / M / 3
+      form#uploadInventory(action='/inventory', method='POST')
+        div
+          label
+            | 商品名稱 (title)
+            br
+            select#invtryTitle(name='invtryTitle')
+              - for (let i = 0 ; i < product.length; i +=1)
+                option(value=product[i].id) #{product[i].title}
+        div
+          label
+            | 顏色 (color_name)
+            br
+            select#invtryColor(name='invtryColor')
+              - for (let i = 0 ; i < color.length; i +=1)
+                option(value=color[i].name) #{color[i].name}
+        div
+          label
+            | 尺寸 (size)
+            br
+            select#size(name='size')
+              option(value='XL') XL
+              option(value='L') L
+              option(value='M') M
+              option(value='S') S
+              option(value='XS') XS
+        div
+          label
+            | 存貨數量 (qty)
+            br
+            input#qty(type='text', name='qty')
+        div
+          input.uploadButton(type='submit', value='上傳')
+    // End of inventory

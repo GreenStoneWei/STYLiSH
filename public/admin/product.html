@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>STYLiSH</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/header_navi.css">
+    <link rel="stylesheet" href="../css/product_detail.css">
+    <link rel="stylesheet" href="../css/tappay.css">
+    <link rel="stylesheet" href="../css/footer.css">
+  </head>
+  <body>
+    <header id="header">
+      <div class="mainNavibar">
+        <img class="logo" src="../images/logo.png">
+        <ul class="category">
+          <li class="women pipe"><a href="#">女裝</a></li>
+          <li class="men pipe"><a href="#">男裝</a></li>
+          <li class="accessories"><a href="#">配件</a></li>
+        </ul>
+        <div class="naviBarSpace"></div>
+        <div class="searchCartMember">
+          <div class="searchBar">
+            <div>
+              <input type="text" id="searchText" name="searchText" />
+            </div>
+            <div id="searchIcon"></div>
+          </div>
+          <div id="cartIcon"></div>
+          <div id="memberIcon"></div>
+        </div>
+      </div>
+      <div class="charcoalBar"></div>
+    </header>
+
+    <!-- product details -->
+
+    <div id="detailContainer">
+      <div id="mainDetailContainer">
+        <div id="mainPhoto"></div>
+        <div id="mainDescription">
+          <div id="descriptionTitle"></div>
+          <div id="descriptionID"></div>
+          <div id="descriptionPrice"></div>
+          <div class="separateLine"></div>
+
+          <div id="descriptionColorBlock">
+            <div class="descriptionProperty">顏色</div>
+            <div class="descriptionPipe"></div>
+            <!-- <div class="colorVariant" style="background-color: #9baac2;"></div>
+            <div class="colorVariant" style="background-color: #8b572a;"></div> -->
+          </div>
+
+          <div id="descriptionSizeBlock">
+            <div class="descriptionProperty">尺寸</div>
+            <div class="descriptionPipe"></div>
+            <!-- <div class="size_variant sizeText">S</div>
+            <div class="size_variant sizeText">M</div>
+            <div class="size_variant sizeText">L</div> -->
+          </div>
+
+          <div id="descriptionQtyBlock">
+            <div class="descriptionProperty">數量</div>
+            <div class="descriptionPipe"></div>
+            <div id="qtyBox">
+              <div id="minusSign">-</div>
+              <div id="qtyToBuy" class="qtyToBuy">1</div>
+              <div id="plusSign">+</div>
+            </div>
+          </div>
+
+          <div id="callToAction">
+            <div class="addToCart">加入購物車</div>
+          </div>
+
+          <div id="note" class="detailText"></div>
+          <div id="texture" class="detailText"></div>
+          <div id="place" class="detailText"></div>
+
+          <div class="separateLine"></div>
+
+          <label for="card-number">卡號</label>
+          <div class="tpfield" id="card-number"></div>
+          <label for="expiration-date">卡片到期日</label>
+          <div class="tpfield" id="card-expiration-date"></div>
+          <label for="card-ccv">卡片後三碼</label>
+          <div class="tpfield" id="card-ccv"></div>
+
+          <div id="checkout">
+            <div class="addToCart">立即結帳</div>
+          </div>
+
+          <div id="checkoutMessage"></div>
+
+        </div>
+      </div>
+      <!--  details and other images  -->
+
+      <div id="detailOtherImage">
+        <div id="breakLine">
+          <div id="detailDescription">細部說明</div>
+          <div class="breakLine"></div>
+        </div>
+        <div id="story">
+          <!-- O.N.S is all about options, which is why we took our staple polo shirt and upgraded it with slubby linen jersey, making it even lighter for those who prefer their summer style extra-breezy. -->
+        </div>
+        <div id="otherPhotos"></div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footerNaviBar">
+      <div id="footerContainer">
+        <ul class="footerTab">
+          <li class="about"><a href="#">關於 Stylish</a></li>
+          <li class="footerPipe"></li>
+          <li class="serviceTerm"><a href="#">服務條款</a></li>
+          <li class="footerPipe"></li>
+          <li class="privatePrivacy"><a href="#">隱私政策</a></li>
+          <li class="footerPipe"></li>
+          <li class="contactUs"><a href="#">聯絡我們</a></li>
+          <li class="footerPipe"></li>
+          <li class="faq"><a href="#">FAQ</a></li>
+        </ul>
+        <div class="footerNaviBarSpace"></div>
+        <div id="socialIcons">
+          <div class="socialIcons"><img src="../images/line.png" width="50" height="50"></div>
+          <div class="socialIcons"><img src="../images/facebook.png" width="50" height="50"></div>
+          <div class="socialIcons"><img src="../images/twitter.png" width="50" height="50"></div>
+        </div>
+        <div id="copyright">&copy 2018. All rights reserved.</div>
+      </div>
+    </footer>
+    <script src="../js/host_ip.js"></script>
+    <script src="../js/product_detail.js"></script>
+    <script src="../js/variant_selector.js"></script>
+    <script src="https://js.tappaysdk.com/tpdirect/v4"></script>
+    <script src="../js/tappay.js"></script>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+#memberProfileContainer{
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  min-height: calc( 100vh - 250px );
+  align-items: center;
+}
+
+#memberProfile{
+  text-align: center;
+  font-size: 20px;
+}

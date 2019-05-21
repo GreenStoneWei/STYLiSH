@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    title  Prouct Management Page
+    link(rel='stylesheet', href='../css/upload.css')
+  body
+    h1#pageTitle 商品管理頁面
+    #galleryBlock
+      h2 上傳多張商品圖片
+      form#uploadGallery(action='/gallery', method='POST', enctype='multipart/form-data')
+        div
+          label
+            | 商品名稱 (title)
+            br
+            select#produtTitleForImg(name='galleryProductId')
+              - for (let i = 0 ; i < product.length; i +=1)
+                option(value=product[i].id) #{product[i].title}
+        div
+          label
+            | 其他商品圖
+            input#gallery(type='file', name='gallery' multiple)
+        div
+          input.uploadButton(type='submit', value='上傳')

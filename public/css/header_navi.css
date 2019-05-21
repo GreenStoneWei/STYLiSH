@@ -1,0 +1,153 @@
+/* --- Basic and Universal Style */
+* {
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  font-family: PingFangTC, Helvetica, Arial;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+/* --- Navigation Bar--- */
+
+#header {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainNavibar {
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  background: #ffffff;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2px solid #313538;
+}
+
+.logo {
+  height: 48px;
+  width: 258px;
+  margin: 26px 0px 26px 60px;
+}
+
+.category{
+  display: inline-flex;
+  flex-direction: row;
+  margin-left: 96px;
+  margin-top: 44px;
+}
+
+.category a{
+  color: #3f3a3a;
+  text-decoration: none;
+}
+
+.category a:hover{
+  color: #8b572a;
+}
+
+.category li {
+  width:110px;
+  height: 23px;
+}
+
+.women,
+.men,
+.accessories {
+  font-size: 20px;
+  letter-spacing: 30px;
+  text-align: left;
+  color: #3f3a3a;
+}
+
+.pipe {
+  border-right: 2px solid #3f3a3a;
+  margin-right: 34px;
+}
+
+.naviBarSpace {
+  flex: 1 2 8vw;
+}
+
+.searchCartMember {
+  width: 386px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 54px;
+}
+
+.searchBar {
+  width: 214px;
+  height: 44px;
+  border-radius: 30px;
+  border: solid 1px #979797;
+  padding: 2px 10px 2px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#searchText {
+  width:160px;
+  height:34px;
+  border: none;
+}
+
+#searchText:focus {
+  outline: none;
+}
+
+#searchIcon {
+  height: 37px;
+  width: 37px;
+  background: url("../images/search.png") no-repeat;
+  background-position: center center;
+  cursor: pointer;
+}
+#searchIcon:hover{
+  height: 37px;
+  width: 37px;
+  background: url("../images/search-hover.png")no-repeat;
+  background-position: center center;
+}
+
+#cartIcon {
+  width:44px;
+  height:44px;
+  background: url("../images/cart.png")no-repeat;
+  background-position: center center;
+  cursor: pointer;
+}
+#cartIcon:hover {
+  width:44px;
+  height:44px;
+  background: url("../images/cart-hover.png")no-repeat;
+  background-position: center center;
+}
+
+#memberIcon{
+  width:44px;
+  height:44px;
+  background: url("../images/member.png")no-repeat;
+  background-position: center center;
+  cursor: pointer;
+}
+#memberIcon:hover {
+  width:44px;
+  height:44px;
+  background: url("../images/member-hover.png")no-repeat;
+  background-position: center center;
+}
+
+.charcoalBar{
+  width: 100vw;
+  height: 40px;
+  background-color: #313538;
+  margin-top: 100px;
+}

@@ -1,0 +1,40 @@
+doctype html
+html
+  head
+    title  Sign In Page
+    link(rel='stylesheet', href='/../css/signform.css')
+    script(src='/../js/fb_login.js')
+  body
+    h1#pageTitle 使用者登入
+    #signInBlock
+      h2 請輸入使用者資訊
+      form#signInForm
+        div
+          label
+            | 使用者名稱 (name)
+            br
+            input#loginName(type='text', name='loginName', required='required')
+        div
+          label
+            | 電子郵件信箱 (e-mail address)
+            br
+            input#loginEmail(type='text', name='loginEmail', required='required')
+        div
+          label
+            | 密碼 (password)
+            br
+            input#loginPassword(type='text', name='loginPassword', required='required')
+        div
+          button.signButton(type='submit', value='登入') 登入
+          
+    //- fb:login-button(data-max-rows='1', data-size='large', data-button-type='login_with', data-show-faces='false', data-auto-logout-link='true', data-use-continue-as='true', scope='public_profile,email', onlogin='checkLoginState();')
+
+    .fb-login-button(data-max-rows='1', data-size='large', data-button-type='login_with', data-show-faces='false', data-auto-logout-link='true', data-use-continue-as='true', scope='public_profile,email', onlogin='checkLoginState();')
+      
+    //- fb:login-button(scope='public_profile,email', onlogin='checkLoginState();')
+    #status
+  footer
+    div
+      p#loginResponse
+    script(src='/../js/signin.js')
+    block res_msg
