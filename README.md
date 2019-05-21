@@ -4,7 +4,7 @@ An e-commerce website selling modern outfits
 
 ---
 
-Backend Skills Demonstrated
+**Backend Skills Demonstrated**
 
 -  Followed RESTful APIs below and implemented independently
 -  Designed and built a relational database
@@ -17,13 +17,36 @@ Backend Skills Demonstrated
 
 ---
 
-Front-End Skills Demonstrated
+**Front-End Skills Demonstrated**
 
 -  Used CSS flexbox to lay out webpages
 
 ---
 
+### Database Schema
+
+![Imgur](https://i.imgur.com/VX29Xfg.png)
+
+- Set primary key, foreign keys
+- Index improves query performance (use `EXPLAIN`)
+
+---
+
+### Backend Architecture
+
+![Imgur](https://i.imgur.com/PNVeffH.png)
+
+1. When browser sends request on 443 port to the server, first connect to reverse proxy server (powered by NGINX).
+2. NGINX redirect the request to where the application listens.
+3. When browser call the APIs, the application first check if the content has been cached. If yes, response with cache.
+4. If the content hasn't been cached or cached content was expired, query database.
+5. When users checkout products, the server sends request to thrid party payment to verify the banking information.
+
+---
+
 ## API doc (for Demo)
+
+(for cowork APIs, see [here](https://github.com/GreenStoneWei/STYLiSH/tree/master/cowork)`)
 
 ### Product List API
 
@@ -360,7 +383,7 @@ error  | string | error message
 
 ### Administration Pages Demo
 
-https://stylish.wheatxstone.com/admin/product
-https://stylish.wheatxstone.com/admin/inventory
-https://stylish.wheatxstone.com/admin/gallery
-https://stylish.wheatxstone.com/admin/campaign
+- https://stylish.wheatxstone.com/admin/product
+- https://stylish.wheatxstone.com/admin/inventory
+- https://stylish.wheatxstone.com/admin/gallery
+- https://stylish.wheatxstone.com/admin/campaign

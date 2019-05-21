@@ -1,5 +1,5 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 const mysql = require('../../config/mysql.js');
 const redis = require('redis');
 const client = redis.createClient();
