@@ -46,7 +46,7 @@ An e-commerce website selling modern outfits
 
 ## API doc (for Demo)
 
-(for cowork APIs, see [here](https://github.com/GreenStoneWei/STYLiSH/tree/master/cowork)`)
+(for cowork APIs, see [here](https://github.com/GreenStoneWei/STYLiSH/tree/master/cowork)
 
 ### Product List API
 
