@@ -3,7 +3,7 @@ const app = express();
 const secret = "074205d797e99c1cb638e5dee4793ae013e9a9341797b8f866a4d45b86b458e6";
 const crypto = require('crypto');
 const execFile = require('child_process').execFile;
-const mysql = require('../stylish/config/mysql.js')
+const mysql = require('./config/mysql.js');
 app.use(express.static('public'));
 app.set('view engine', 'pug');
 
