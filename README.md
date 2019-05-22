@@ -27,8 +27,12 @@ An e-commerce website selling modern outfits
 
 ![Imgur](https://i.imgur.com/VX29Xfg.png)
 
-- Set primary key, foreign keys
-- Index improves query performance (use `EXPLAIN`)
+- Set primary key, foreign keys to improve query performance (use `EXPLAIN`)
+  - product.id PK -> FK inventory.product_id
+                  -> FK img_gallery.product_id
+                  -> FK campaign.product_id
+  - color.name PK -> FK inventory.color_name
+  - user.id -> customer_order.user_id
 
 ---
 
